@@ -23,7 +23,28 @@ Estructura del archivo de excel
 | -- | -------- | ------------------- | ---------- | ---------------- | -------------- | ------------ | ---------- | ------------------------ | --------------------------------------------------------------------------- | ------------------------------------------------------- |
 | 1  | Software | Microsoft 365       | Microsoft  | XXXXX-XXXXX      | IT             | 01/01/2024   | 31/12/2025 | `=SI(H2="";"";H2-HOY())` | `=SI(I2="";"";SI(I2<=0;"Vencido";SI(I2<=120;"Próximo a vencer";"Activo")))` | `=SI(J2="Próximo a vencer";"⚠️ Revisar renovación";"")` |
 
+Nota sobre script y archivo de licencias 
 
+▶️ Ejecución
+
+Edita la ruta del Excel dentro del script:
+
+$excelPath = "C:\Ruta\A\Control_Licencias.xlsx"
+
+
+Ejecuta PowerShell como administrador y permite scripts (una sola vez):
+
+Set-ExecutionPolicy RemoteSigned
+
+Lanza el script:
+
+.\Comprobar-Licencias.ps1
+
+💬 Ejemplo de salida
+========== ALERTAS DE LICENCIAS ==========
+⚠️ SentinelOne EDR vence en 98 días (fecha: 01/05/2025)
+❌ Adobe Creative Cloud ya ha vencido (fecha: 15/06/2024)
+==========================================
 
 
 3️⃣ Ejecuta el script:
