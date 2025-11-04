@@ -19,6 +19,11 @@ Opcionalmente, cambia mail.Display() por mail.Send() para enviar sin confirmaci�
 
 Estructura del archivo de excel 
 
+| Nº | Tipo     | Producto / Servicio | Fabricante | Nº Serie / Clave | Usuario / Área | Fecha Inicio | Fecha Fin  | Días Restantes           | Estado                                                                      | Aviso                                                   |
+| -- | -------- | ------------------- | ---------- | ---------------- | -------------- | ------------ | ---------- | ------------------------ | --------------------------------------------------------------------------- | ------------------------------------------------------- |
+| 1  | Software | Microsoft 365       | Microsoft  | XXXXX-XXXXX      | IT             | 01/01/2024   | 31/12/2025 | `=SI(H2="";"";H2-HOY())` | `=SI(I2="";"";SI(I2<=0;"Vencido";SI(I2<=120;"Próximo a vencer";"Activo")))` | `=SI(J2="Próximo a vencer";"⚠️ Revisar renovación";"")` |
+
+
 
 
 3️⃣ Ejecuta el script:
