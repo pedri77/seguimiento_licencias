@@ -41,10 +41,11 @@ Lanza el script:
 .\Comprobar-Licencias.ps1
 
 💬 Ejemplo de salida
-========== ALERTAS DE LICENCIAS ==========
-⚠️ SentinelOne EDR vence en 98 días (fecha: 01/05/2025)
+
+           ALERTAS DE LICENCIAS 
+⚠️ Fabricante EDR vence en 98 días (fecha: 01/05/2025)
 ❌ Adobe Creative Cloud ya ha vencido (fecha: 15/06/2024)
-==========================================
+
 
 
 3️⃣ Ejecuta el script:
