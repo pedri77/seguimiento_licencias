@@ -55,12 +55,12 @@ py .\enviar_alertas_outlook.py
 
 Outlook abrirá un nuevo correo con la tabla de alertas (o lo enviará directamente si activas .Send()).
 
-🧠 Ventajas de esta versión
+🧠 Ventajas del script con envío por outlook
 
-✅ No usa contraseñas ni configuración SMTP.
-✅ Funciona en entornos corporativos con Outlook / Microsoft 365.
-✅ Permite revisión manual antes del envío.
-✅ 100 % compatible con Windows.
+✅ No usa contraseñas ni configuración SMTP. <br>
+✅ Funciona en entornos corporativos con Outlook / Microsoft 365. <br>
+✅ Permite revisión manual antes del envío. <br>
+✅ 100 % compatible con Windows.<br>
 
 -----------------
 
